@@ -1,0 +1,31 @@
+{% extends 'core/base.html' %}
+
+<!--Titulo de la pagina-->
+{% block title %}About{% endblock %}
+
+<!--Imagen de la pagina-->
+{% block backgroud %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+<!--Cabecera-->
+{% block Cabecera %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock%}
+
+<!--Contenido de la pagina-->
+{% block content %}
+<div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{%static 'core/img/Cris.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Cristian Alonso Alvarez Toscano</h2>   
+        <p>Nacido en... lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit, fuga atque ea nobis sit soluta odio.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit...</p>
+      </div>
+    </div>
+</div>
+
+
+{% endblock %}
+
